@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+        
+      fetch("./data.json")
+        .then((data) => data.json())
+        .then(json => {
+            
+            toonCollectie(json);
+        })
+        
+        function toonCollectie(json)
+        {
+            console.log(json.mijnGameCollectie)
+            const collectie = json.mijnGameCollectie;
+
+            for(let i=0; i<collectie.length; i++)
+            {
+                const item = collectie[i];
+                console.log(item.game);
+                
+                const div = document.createElement('div');
+                div.textContent = item.game
+                document.getElementById('container').appendChild(div);
+            }
+        }
+    </script>
+  </body>
 </html>
