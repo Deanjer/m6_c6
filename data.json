@@ -1,0 +1,44 @@
+{
+  "mijnGameCollectie": [
+    {
+      "id": 1,
+      "jaartal": 2019,
+      "maand": 2,
+      "dag": 4,
+      "game": "Apex legends",
+      "afbeeldingen": {
+        "poster": "img/apex.jpeg"
+      }
+    },
+    {
+      "id": 2,
+      "jaartal": 2022,
+      "maand": 10,
+      "dag": 28,
+      "game": "Modern warfare 2",
+      "afbeeldingen": {
+        "poster": "img/mw2.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "jaartal": 2011,
+      "maand": 11,
+      "dag": 18,
+      "game": "Minecraft",
+      "afbeeldingen": {
+        "poster": "img/minecraft.webp"
+      }
+    },
+    {
+      "id": 4,
+      "jaartal": 2019,
+      "maand": 2,
+      "dag": 4,
+      "game": "Apex legends",
+      "afbeeldingen": {
+        "poster": "voorkant001.png"
+      }
+    }
+  ]
+}
